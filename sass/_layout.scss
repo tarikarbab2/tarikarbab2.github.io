@@ -1,0 +1,195 @@
+.amiri{
+    font-family: 'Amiri',serif;
+
+}
+
+.header{
+    background-image: linear-gradient(90deg,rgba(#000000,0.5),rgba(#000000,0.5)),url('../img/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+    height: 95vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    &__introudction{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+
+
+    }
+    &__main{
+        font-family: 'Fraunces',serif;
+        font-size: 4rem;
+        display: inline-block;
+        width: 30rem;
+        font-weight: 400;
+        text-align: center;
+       
+    }
+    &__sub{
+        font-size: 2.6rem;
+        font-family: 'Amiri',serif;
+        width: 65rem;
+        text-align: center;
+        font-family: 700;
+
+    }
+    &__lang{
+        position: absolute;
+        top: 65%;
+        left: 27%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+    &__skills{
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2rem;
+        
+
+
+    }
+    &__icon{
+        margin-left: 3rem;
+
+    }
+}
+
+
+////////////////////////servecics
+
+
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-family: 'Fraunces',serif;
+
+ &__header{
+   
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+
+ }
+ &__container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  
+
+ }
+ &__text{
+    
+  
+    margin-top: 4rem;
+   
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     
+ }
+ &__header-secondery{
+     font-size: 4rem;
+     margin-bottom: 3rem;
+     font-weight: 600;
+     text-align: center;
+     font-family: 'Fraunces',serif;
+ }
+ &__parg{
+    font-size: 4.5rem;
+    font-weight: 400;
+     display: inline-block;
+     width: 42rem;
+     
+     text-align: center;
+     font-family: 'Fraunces',serif;
+ }
+ &__icon{
+     width: 60rem;
+ }
+
+}
+
+/////////////project
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header{
+        font-size: 3.5rem;
+        font-family: 'Fraunces',serif;
+        font-weight: 600;
+        margin-bottom: 4rem;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+//////////////////footer
+.footer{
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 3%;
+    & h1{
+        font-size: 3rem;
+        align-self: flex-end;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-size: 3rem;
+
+
+        }
+        h4{
+            font-size: 2rem;
+        }
+    }
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+.icon{
+  width:3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+

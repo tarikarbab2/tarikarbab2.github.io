@@ -1,0 +1,125 @@
+.nav{
+    position: absolute;
+   
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 92%;
+    
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 2rem;
+    
+    &__items{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 5rem;
+      
+    }
+    &__item{
+      margin-left: 6rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      font-family: 'Lato', sans-serif;
+    }
+    &__ring{
+      border: 1px solid #ffffff;
+      border-radius: 10rem;
+      padding: 3px 20px;
+    }
+   
+    
+        
+
+    
+
+}
+
+//////////logo
+
+.logo-icon{
+  font-size: 3rem;
+  font-family: 'Fraunces',serif;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+///////////////////////card
+
+.card{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 350px;
+
+ margin-right:5rem ;
+ border: 1px solid #707070;
+ font-family: 'Fraunces',serif;
+ margin-bottom: 3rem;
+ 
+ box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  &__img{
+    width:350px ;
+    height: 340px;
+    margin-bottom: 3rem;
+
+    
+
+  }
+  &__header{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+  &__prag{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+    height: 3rem;
+    margin-bottom: 4rem;
+  }
+  &__btn,
+  &__btn:visited,
+  &__btn:link{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 4rem;
+    text-align: center;
+    background-image: linear-gradient(90deg,#FF5E62,#FF9966);
+    box-shadow: 0rem 0rem 0.5rem rgba(#000000, 0.3);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    transition: all .2s;
+
+  }
+  &__btn:hover{
+    transform: translateY(-3px);
+  }
+  &__btn:active{
+    transform: translateY(-1px);
+  }
+
+
+}
