@@ -5,31 +5,40 @@
 
 .header{
     background-image: linear-gradient(90deg,rgba(#000000,0.5),rgba(#000000,0.5)),url('../img/christopher-gower-m_HRfLhgABo-unsplash.jpg');
-    height: 95vh;
-    width: 100vw;
+   
+    width: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
     
+    
     &__introudction{
-        position: absolute;
-        top: 30%;
-        left: 15%;
+       margin-top: 20rem;
         color: #ffffff;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 70%;
-
+        justify-content: center;
+        align-items: flex-start;
+            width: 100%;
+            margin-bottom: 5rem;
+            @include responed(phone){
+                flex-direction: column;
+                align-items: center;
+            }
 
     }
     &__main{
         font-family: 'Fraunces',serif;
-        font-size: 4rem;
+        font-size: 3.5rem;
         display: inline-block;
         width: 30rem;
         font-weight: 400;
         text-align: center;
+        margin-right: 8rem;
+        @include responed(small-tablet){
+         margin-right: 0;
+         margin-bottom: 2rem;
+
+        }
        
     }
     &__sub{
@@ -38,27 +47,57 @@
         width: 65rem;
         text-align: center;
         font-family: 700;
+        @include responed(small-tablet){
+          display: none;
+
+            
+           }
 
     }
     &__lang{
-        position: absolute;
-        top: 65%;
-        left: 27%;
+        
         color: #ffffff;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        justify-content: center;
     }
     &__skills{
         font-size: 2.8rem;
         font-weight: 700;
         text-align: center;
         margin-bottom: 2rem;
+        @include responed(phone){
+           font-size: 2.2rem;
+           width: auto;
+            
+           }
         
 
 
     }
+    &__icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    @include responed(phone){
+       flex-wrap: wrap;
+     
+          
+         }
+    }
     &__icon{
         margin-left: 3rem;
+        width: 4rem;
+        height: 4rem;
+        
+        @include responed(phone){
+           width: 4rem;
+           height: 4rem;
+           margin-top: 2rem;
+        
+             
+            }
 
     }
 }
@@ -87,6 +126,11 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  @include responed(tablet-port){
+        flex-direction: column;
+        align-items: center;
+      
+}
 
   
 
@@ -100,6 +144,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include responed(tablet-landscape){
+        width: 25rem;
+        margin-right: 15rem;
+    }
+    @include responed(tablet-port){
+        margin-right: 0;
+        margin-bottom: 5rem;
+        width: 100%;
+        
+        
+      
+    }
+    
 
      
  }
@@ -109,6 +166,15 @@
      font-weight: 600;
      text-align: center;
      font-family: 'Fraunces',serif;
+     @include responed(tablet-landscape){
+        font-size: 2.5rem;
+    }
+    @include responed(tablet-port){
+       font-size: 3.5rem;
+        
+        
+      
+    }
  }
  &__parg{
     font-size: 4.5rem;
@@ -118,9 +184,25 @@
      
      text-align: center;
      font-family: 'Fraunces',serif;
+     @include responed(tablet-landscape){
+        font-size: 2.2rem;
+    }
+    @include responed(tablet-port){
+      font-size: 2.5rem;
+        
+        
+      
+    }
  }
  &__icon{
      width: 60rem;
+     @include responed(tablet-landscape){
+         width: 40rem;
+     }
+     @include responed(tablet-port){
+        width: 30rem;
+       
+    }
  }
 
 }
@@ -157,15 +239,30 @@
     justify-content: space-between;
     color: #ffffff;
     padding: 3%;
+    @include responed(small-tablet){
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     
+          
+         }
     & h1{
         font-size: 3rem;
         align-self: flex-end;
+        @include responed(small-tablet){
+            align-self: center;
+            margin-bottom: 2rem;
+        }
     }
     &__contact{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include responed(small-tablet){
+            
+            margin-bottom: 2rem;
+        }
         h3{
             font-size: 3rem;
 
@@ -181,6 +278,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
     & h1{
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
@@ -191,5 +289,9 @@
   width:3rem;
   height: 3rem;
   margin-right: 1rem;
+  @include responed(small-tablet){
+       
+    margin-bottom: 4rem;
+}
 }
 
