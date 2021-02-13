@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
   font-family: 'El Messiri', sans-serif;
   font-size: 62.5%; }
@@ -145,7 +152,10 @@ a:visited {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     @media (max-width: 56.25em) {
       .service__container {
         -webkit-box-orient: vertical;
@@ -560,4 +570,4 @@ a:visited {
   .card__btn:active {
     -webkit-transform: translateY(-1px);
         -ms-transform: translateY(-1px);
-            transform: translateY(-1px); 
+            transform: translateY(-1px); }
