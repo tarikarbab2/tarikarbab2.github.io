@@ -212,8 +212,9 @@
 .nav-colored{
   background-color: #000000;
   @include responed(small-tablet){
+    background-color: transparent;
   }
-  background-color: transparent;
+  
 }
 .nav-transparent{
   background-color: transparent;

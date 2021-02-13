@@ -48,25 +48,19 @@ a:visited {
         align-items: center; } }
   .header__main {
     font-family: 'Fraunces',serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     display: inline-block;
-    width: 30rem;
-    font-weight: 400;
-    text-align: center;
-    margin-right: 8rem; }
+    width: 50rem;
+    font-weight: 300;
+    text-align: start;
+    text-align: center; }
     @media (max-width: 46.25em) {
       .header__main {
         margin-right: 0;
-        margin-bottom: 2rem; } }
-  .header__sub {
-    font-size: 2.6rem;
-    font-family: 'Amiri',serif;
-    width: 65rem;
-    text-align: center;
-    font-family: 700; }
-    @media (max-width: 46.25em) {
-      .header__sub {
-        display: none; } }
+        margin-bottom: 2rem;
+        width: 35rem; }
+        .header__main span {
+          display: none; } }
   .header__lang {
     color: #ffffff;
     display: flex;
@@ -92,7 +86,8 @@ a:visited {
   .header__icon {
     margin-left: 3rem;
     width: 4rem;
-    height: 4rem; }
+    height: 4rem;
+    margin-bottom: 5rem; }
     @media (max-width: 37.5em) {
       .header__icon {
         width: 4rem;
@@ -145,20 +140,31 @@ a:visited {
       .service__header-secondery {
         font-size: 3.5rem; } }
   .service__parg {
-    font-size: 4.5rem;
-    font-weight: 400;
-    display: inline-block;
-    width: 42rem;
+    font-size: 3rem;
+    font-family: 'Amiri',serif;
+    width: 50rem;
     text-align: center;
-    font-family: 'Fraunces',serif; }
+    font-family: 700; }
     @media (max-width: 75em) {
       .service__parg {
         font-size: 2.2rem; } }
     @media (max-width: 56.25em) {
       .service__parg {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem;
+        width: 35rem; } }
+  .service__sub {
+    font-size: 2.6rem;
+    font-family: 'Amiri',serif;
+    width: 50rem;
+    text-align: center;
+    font-family: 700;
+    margin-bottom: 3rem; }
+    @media (max-width: 46.25em) {
+      .service__sub {
+        font-size: 2.2rem;
+        width: 30rem; } }
   .service__icon {
-    width: 60rem; }
+    width: 55rem; }
     @media (max-width: 75em) {
       .service__icon {
         width: 40rem; } }
@@ -326,8 +332,10 @@ a:visited {
     height: 2.5rem; }
 
 .nav-colored {
-  background-color: #000000;
-  background-color: transparent; }
+  background-color: #000000; }
+  @media (max-width: 46.25em) {
+    .nav-colored {
+      background-color: transparent; } }
 
 .nav-transparent {
   background-color: transparent; }
