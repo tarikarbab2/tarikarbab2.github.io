@@ -1,5 +1,6 @@
 const nav=document.querySelector('.nav__icon')
 const items=document.querySelector('.nav__items')
+const card=document.querySelector(".card")
 
 nav.addEventListener('click',function(e){
     
@@ -18,3 +19,4 @@ window.onscroll = function () {
         myNav.classList.remove("nav-colored");
     }
 };
+

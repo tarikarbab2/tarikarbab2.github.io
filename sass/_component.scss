@@ -149,7 +149,8 @@
 
 &__link:link,
 &__link:visited{
-    display: inline-block;
+  display:flex;
+  align-items: center; 
     font-size: 2rem;
     text-decoration: none;
     color:#ffffff ;
@@ -195,6 +196,9 @@
     }
         
         
+    }
+    &__world{
+        padding-right: 1rem;
     }
     
     &__hum{
@@ -244,12 +248,18 @@
   margin-left: 2rem;
   width: 320px;
 }
+
 @include responed(phone){
        
   margin-right: 2rem;
       margin-left: 2rem;
   width: 290px;
  
+}
+&-a{
+text-decoration: none;
+
+
 }
   &__container{
     display: flex;
