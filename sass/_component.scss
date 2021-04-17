@@ -235,18 +235,23 @@
  flex-direction: column;
  align-items: center;
  width: 350px;
+ position: relative;
 
  margin-right:5rem ;
  border: 1px solid #707070;
  font-family: 'Fraunces',serif;
  margin-bottom: 5rem;
+ height: 340px;
+ border-radius: 2rem;
  
  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
+
  @include responed(small-tablet){
        
   margin-right: 2rem;
   margin-left: 2rem;
   width: 320px;
+  height: 310px;
 }
 
 @include responed(phone){
@@ -254,6 +259,7 @@
   margin-right: 2rem;
       margin-left: 2rem;
   width: 290px;
+  height: 280px;
  
 }
 &-a{
@@ -261,6 +267,55 @@ text-decoration: none;
 
 
 }
+&__link:link,
+&__link:visited{
+
+  &:hover{
+  
+     
+  
+   .card__hover{
+     display: flex;
+    
+   }
+    
+    
+  }
+
+}
+  &__hover{
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transition: all;
+    transform: translate(-50%,-50%);
+    border-radius: 2rem;
+  }
+  &__hover--background{
+    width: 352px;
+    height: 342px;
+    background-color: rgba($color: #000000, $alpha: .5);
+
+    @include responed(small-tablet){
+       
+      
+      width: 320px;
+      height: 315px;
+    }
+    
+    @include responed(phone){
+           
+      
+      width: 290px;
+      height: 285px;
+     
+    }
+  }
   &__container{
     display: flex;
     flex-wrap: wrap;
@@ -268,9 +323,17 @@ text-decoration: none;
     
   }
   &__img{
+   border-radius: 2rem;
     width:350px ;
     height: 340px;
     margin-bottom: 3rem;
+    &:hover{
+      background-image: linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    }
+    &::after{
+      content: "";
+      background-image: linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    }
     @include responed(small-tablet){
        
      

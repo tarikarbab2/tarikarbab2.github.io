@@ -20,3 +20,7 @@ window.onscroll = function () {
     }
 };
 
+card.addEventListener("click",function(e){
+    
+})
+
