@@ -244,9 +244,9 @@
 //////////////////footer
 .footer{
     width: 100%;
-    background-color: #000000;
+    background-color: #11052C;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     color: #ffffff;
     padding: 3%;
     @include responed(small-tablet){
@@ -291,6 +291,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+   
  
     & h1{
         font-size: 2.5rem;

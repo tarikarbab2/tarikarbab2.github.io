@@ -68,3 +68,13 @@
         color: #ffffff;
 
     }
+
+    .watsup{
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        z-index: 500;
+        &__icon{
+            width: 6rem;
+        }
+    }   

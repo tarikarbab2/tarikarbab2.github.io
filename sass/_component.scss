@@ -57,7 +57,9 @@
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
-  color: #ffffff;
+  color: #000;
+  background-color: #000;
+  border-bottom: 1px solid #707070;
   //position: absolute;
   z-index: 50;
   background-color: transparent;
@@ -79,17 +81,16 @@
       padding-top: 0;
   }
 
-  &__logo h1{
-      font-size: 2rem;
-      font-weight: 700;
-
+  &__logo-icon{
+      font-size: 3rem;
   }
   &__logo{
      margin-left: 5rem;
       order: 0;
+      
       @include responed(small-tablet){
           padding: 2rem;
-          background-color: #000000;
+         
           order: 0;
           width: 100%;
           margin-right: 0;
@@ -111,10 +112,11 @@
           flex-direction: column;
          // justify-content: flex-end;
           display: none;
-          width: 20rem;
-          background-color: #3d59a7;
-          box-shadow: 1rem 1rem 1rem rgba(#000000,0.2);
-          
+          width: 100%;
+          background-color: #ffffff;
+          margin-right: 0;
+        
+         
          
 
       }
@@ -129,16 +131,26 @@
         
     padding-left: 4rem;
     font-weight: 500;
+    color: #000;
     @include responed(small-tablet){
         
-       
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
        margin-top: 1rem;
 
        padding: 0;
       
        color: #ffffff;
-       padding-right: 2rem;
+             padding-right: 2%;
        margin-bottom: 1.5rem;
+       padding-bottom: 7px;
+       &:not(:last-child){
+        border-bottom: 1px solid rgba(#707070,0.3);
+       }
+
+       width: 100%;
+      
       
        
        
@@ -153,11 +165,16 @@
   align-items: center; 
     font-size: 2rem;
     text-decoration: none;
-    color:#ffffff ;
+    color:#000 ;
     opacity: 70%;
+    text-align: end;
+    @include responed (small-tablet){
+        margin-right: 2rem;
+    }
     @include responed(phone){
         opacity: 100%;
         font-size: 2.5rem;
+  
         
     }
     
@@ -171,8 +188,8 @@
         display: none;
         @include responed(small-tablet){
             display: flex;
-            width:4rem;
-            height: 4rem;
+            width:5rem;
+            height: 5rem;
             background-color: #ffffff;
             border-radius: 10rem;
             
@@ -202,8 +219,8 @@
     }
     
     &__hum{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
         
        
 
@@ -214,15 +231,17 @@
 
 }
 .nav-colored{
-  background-color: #000000;
-  @include responed(small-tablet){
-    background-color: transparent;
-  }
+
+
+    background-color:#ffffff;
+
   
 }
 .nav-transparent{
-  background-color: transparent;
+  background-color:#ffffff;
 }
+
+
 
 
 
