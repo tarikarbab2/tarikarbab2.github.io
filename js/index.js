@@ -9,10 +9,11 @@ nav.addEventListener('click',function(e){
     items.style.display=items.style.display===''?'flex':"";
 
 })
+const header=document.querySelector(".header");
 var myNav = document.querySelector('.nav');
 window.onscroll = function () { 
     "use strict";
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ){
+    if (document.body.scrollTop >= header.offsetHeight || document.documentElement.scrollTop >= header.offsetHeight ){
      
       
         myNav.classList.add("nav-colored");

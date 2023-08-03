@@ -90,20 +90,34 @@
         image-rendering: pixelated;
         border-radius: 4rem;
         box-shadow: 18px 19px 12px 1px #6DA9E4;
+        &-ar{
+            margin-left: 10rem;
+        }
         @include responed(tablet-landscape){
             width: 100%;
             height: 45rem;
             margin-right: 10rem;
+            &-ar{
+                margin-right: 0;
+                margin-left: 10rem;
+            }
         }
         
         @include responed(tablet-port){
             margin-right: 5rem;
             width: 90%;
             height: 30rem;
+            &-ar{
+                margin-right: 0;
+                margin-left: 5rem;
+            }
         }
         @include responed(small-tablet){
             margin-right: 0;
             height: 45rem;
+            &-ar{
+                margin-left: 0;
+            }
             
         }
         @include responed(phone){
@@ -120,6 +134,7 @@
         }
     }
     &__introudction{
+       
        margin-top: 20rem;
         color: #ffffff;
         display: flex;
@@ -135,6 +150,11 @@
         flex-direction: column;
             width: 70%;
             margin-bottom: 5rem;
+            &-ar{
+                order: 2;
+                align-items: flex-end;
+                
+            }
             @include responed(phone){
                 flex-direction: column;
                 align-items: center;
@@ -159,7 +179,11 @@
         font-family: sans-serif;
         margin-left: 4rem;
         margin-bottom: 6rem;
-    
+        &-ar{
+            margin-left:0;
+            margin-right:4rem;
+            text-align: end;
+        }
       
        
         @include responed(small-tablet){
@@ -195,6 +219,11 @@
         margin-left: 0;
         width: 100%;
      }
+     &-ar{
+        text-align: end;
+        margin-left: 0;
+        margin-right:4rem;
+     }
    }
    &__btn{
     font-size: 1.8rem;
@@ -213,8 +242,17 @@
     overflow: hidden;
     z-index: 1;
     align-self: flex-start;
+    &-ar{
+        align-self: flex-end;
+        margin-right: 4rem;
+        margin-left: 0;
+        text-align: end;
+    }
     @include responed(small-phone){
         margin-left: 0;
+        &-ar{
+           margin-right:0;
+        }
         
      }
     &:after {
@@ -240,12 +278,18 @@
       
       z-index: -1;
     }
+    
     &:hover {
       color: #fff;
       &:before {
         width: 100%;
       }
     }
+   }
+   &__link:visited,&__link:link{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
    }
    
     
@@ -389,20 +433,35 @@
     }
  }
  &__parg{
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-family: 'Amiri',serif;
     width: 50rem;
-    text-align: center;
+    text-align: left;
     font-family: 700;
+    &-ar{
+        text-align: end;
+    }
      @include responed(tablet-landscape){
         font-size: 2.2rem;
     }
     @include responed(tablet-port){
       font-size: 2.5rem;
-        width: 35rem;
+        width: 70%;
         
       
     }
+    @include responed(phone){
+        font-size: 2rem;
+          width: 80%;
+          
+        
+      }
+    @include responed(small-phone){
+        font-size: 1.8rem;
+          width: 90%;
+          
+        
+      }
  }
  &__sub{
     font-size: 2.6rem;
@@ -463,17 +522,57 @@
 //////////////////footer
 .footer{
     width: 100%;
-    background-color: #11052C;
+    background-color: #000;
     display: flex;
-    justify-content:space-between;
-    color: #ffffff;
-    padding: 3%;
-    @include responed(small-tablet){
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-     
+    flex-direction: column;
+    padding: 6%;
+         &__wrapper{
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content:space-between;
+            color: #ffffff;
           
+            margin-bottom:3rem;
+            @include responed(small-tablet){
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+             
+                  
+                 }
+         }
+         &__text{
+            width: 40%;
+            &-ar{
+                order:5;
+                text-align: end;
+            }
+            @include responed(small-tablet){
+                width: 50%;
+                text-align: center;
+                margin-bottom: 4rem;
+                &-ar{
+                    order:0;
+                    text-align: center;
+                }
+            }
+          
+            @include responed(small-phone){
+                width: 80%;
+                text-align: center;
+                margin-bottom: 4rem;
+               
+            }
+         }
+         &__header{
+            font-family: sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+         }
+         &__parg{
+            font-size: 1.6rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
          }
     & h1{
         font-size: 3rem;
@@ -504,6 +603,15 @@
             font-size: 2rem;
         }
     }
+    &__lower{
+        border-top: 1px solid #444;
+        color: #eee;
+        font-size: 1.2rem;
+        text-align: left;
+        text-align: center;
+        width: 100%;
+        padding:6rem;
+    }
 }
 
 .socialmedia{
@@ -514,7 +622,9 @@
  
     & h1{
         font-size: 2.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
+        font-family: serif;
+        align-self: flex-start;
     }
 
 }
